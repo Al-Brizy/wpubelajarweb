@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coba Elemen Form</title>
+  </head>
+  <body>
+    <h1>Contoh elemen-elemen form pada HTML</h1>
+    <form>
+      <label for="nama"
+        >Nama:
+        <input type="text" name="nama" id="nama" placeholder="Masukkan Nama" />
+        <br />
+      </label>
+
+      <label for="password"
+        >Password:
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Masukkan Password"
+        />
+        <br />
+      </label>
+
+      <label for="email"
+        >Email:
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Masukkan Email"
+        />
+        <br />
+      </label>
+
+      <label for="umur"
+        >Umur:
+        <input
+          type="number"
+          name="umur"
+          id="umur"
+          placeholder="Masukkan Umur"
+          min="1"
+          max="100"
+        />
+        <br />
+      </label>
+
+      <label for="tanggal lahir"
+        >Tanggal Lahir:
+        <input type="date" name="tanggal_lahir" id="tanggal_lahir" />
+        <br />
+      </label>
+
+      <label for="warna kulit"
+        >Warna Kulit:
+        <input
+          type="color"
+          name="warna_kulit"
+          id="warna_kulit"
+          placeholder="Masukkan Warna Kulit"
+        />
+        <br />
+      </label>
+
+      <label for="cv"
+        >Upload CV:
+        <input type="file" name="cv" id="cv" placeholder="Masukkan CV" />
+        <br />
+      </label>
+
+      <button type="submit">Kirim</button>
+    </form>
+  </body>
+</html>
