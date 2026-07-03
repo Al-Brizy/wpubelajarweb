@@ -5,5 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coba Select & TextArea</title>
   </head>
-  <body></body>
+  <body>
+    <form>
+      <h3>Pilih Kota:</h3>
+      <select name="kota" id="kota">
+        <option selected>-- PILIH SALAH SATU --</option>
+        <option value="JKT">JAKARTA</option>
+        <option value="BGR">BOGOR</option>
+        <option value="DPK">DEPOK</option>
+        <option value="TGR">TANGERANG</option>
+        <option value="BKS">BEKASI</option>
+      </select>
+      <br />
+
+      <h3>About me:</h3>
+      <textarea
+        name="about"
+        id="about"
+        cols="50"
+        rows="10"
+        placeholder="Isi data diri anda disini..."
+      ></textarea>
+
+      <br /><br />
+
+      <button type="submit">Kirim!</button>
+    </form>
+  </body>
 </html>
