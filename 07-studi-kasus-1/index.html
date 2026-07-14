@@ -374,216 +374,191 @@
         <br />
 
         <!-- Form Ticket -->
-        <!-- blom -->
         <article id="tickets" align="center">
           <h2>Get Your Tickets Now!</h2>
           <form>
             <table
-              width="50%"
-              border="1"
+              width="40%"
+              border="0"
               cellpadding="10"
-              cellspacing="0"
+              cellspacing="10"
               align="center"
             >
-              <tr>
+              <!-- Head -->
+              <thead>
+                <tr>
+                  <th colspan="3" align="center">
+                    <h3>WPU StreamFest 2026 Ticket Form</h3>
+                  </th>
+                </tr>
+              </thead>
+
+              <!-- Full Name -->
+              <tr align="left">
                 <td>
-                  <table
-                    width="100%"
-                    border="0"
-                    cellpadding="10"
-                    cellspacing="10"
-                  >
-                    <!-- Head -->
-                    <thead>
-                      <tr>
-                        <th colspan="3" align="center">
-                          <h3>WPU StreamFest 2026 Ticket Form</h3>
-                        </th>
-                      </tr>
-                    </thead>
+                  <label for="full-name"><strong>Nama Lengkap</strong></label>
+                </td>
+                <td align="center">:</td>
+                <td>
+                  <input
+                    type="text"
+                    name="full-name"
+                    id="full-name"
+                    placeholder="Masukkan Nama Lengkap"
+                    required
+                  />
+                </td>
+              </tr>
 
-                    <!-- Full Name -->
-                    <tr>
-                      <td>
-                        <label for="full-name"
-                          ><strong>Nama Lengkap</strong></label
-                        >
-                      </td>
-                      <td align="center">:</td>
-                      <td>
-                        <input
-                          type="text"
-                          name="full-name"
-                          id="full-name"
-                          placeholder="Masukkan Nama Lengkap"
-                          size="55"
-                          required
-                        />
-                      </td>
-                    </tr>
+              <!-- Email -->
+              <tr align="left">
+                <td>
+                  <label for="email"><strong>Alamat Email</strong></label>
+                </td>
+                <td align="center">:</td>
+                <td>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Masukkan Email"
+                    required
+                  />
+                </td>
+              </tr>
 
-                    <!-- Email -->
-                    <tr>
-                      <td>
-                        <label for="email"><strong>Alamat Email</strong></label>
-                      </td>
-                      <td align="center">:</td>
-                      <td>
-                        <input
-                          type="email"
-                          name="email"
-                          id="email"
-                          placeholder="Masukkan Email"
-                          size="55"
-                          required
-                        />
-                      </td>
-                    </tr>
+              <!-- Phone Number -->
+              <tr align="left">
+                <td>
+                  <label for="phone"><strong>Nomor Telepon</strong></label>
+                </td>
+                <td align="center">:</td>
+                <td>
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="Masukkan Nomor Telepon"
+                    required
+                  />
+                </td>
+              </tr>
 
-                    <!-- Phone Number -->
-                    <tr>
-                      <td>
-                        <label for="phone"
-                          ><strong>Nomor Telepon</strong></label
-                        >
-                      </td>
-                      <td align="center">:</td>
-                      <td>
-                        <input
-                          type="tel"
-                          name="phone"
-                          id="phone"
-                          placeholder="Masukkan Nomor Telepon"
-                          size="55"
-                          required
-                        />
-                      </td>
-                    </tr>
+              <!-- Ticket Type -->
+              <tr align="left">
+                <td>
+                  <label for="ticket-type"><strong>Jenis Tiket</strong></label>
+                </td>
+                <td align="center">:</td>
+                <td>
+                  <!-- Tiket Regular -->
+                  <label for="regular">
+                    <input
+                      type="radio"
+                      name="ticket-type"
+                      id="regular"
+                      value="regular"
+                      required
+                    />
+                    Regular - (Rp 500.000)
+                    <br /><br />
+                  </label>
 
-                    <!-- Ticket Type -->
-                    <tr>
-                      <td>
-                        <label for="ticket-type"
-                          ><strong>Jenis Tiket</strong></label
-                        >
-                      </td>
-                      <td align="center">:</td>
-                      <td>
-                        <!-- Tiket Regular -->
-                        <label for="regular">
-                          <input
-                            type="radio"
-                            name="ticket-type"
-                            id="regular"
-                            value="regular"
-                            required
-                          />
-                          Regular - (Rp 500.000)
-                          <br /><br />
-                        </label>
+                  <!-- Tiket VIP -->
+                  <label for="vip">
+                    <input
+                      type="radio"
+                      name="ticket-type"
+                      id="vip"
+                      value="vip"
+                      required
+                    />
+                    VIP - (Rp 1.500.000) <strong>RECOMMENDED! 👍</strong>
+                    <br /><br />
+                  </label>
 
-                        <!-- Tiket VIP -->
-                        <label for="vip">
-                          <input
-                            type="radio"
-                            name="ticket-type"
-                            id="vip"
-                            value="vip"
-                            required
-                          />
-                          VIP - (Rp 1.500.000) ---<strong
-                            >RECOMMENDED! 👍---</strong
-                          >
-                          <br /><br />
-                        </label>
+                  <!-- Tiket VVIP -->
+                  <label for="vvip">
+                    <input
+                      type="radio"
+                      name="ticket-type"
+                      id="vvip"
+                      value="vvip"
+                      required
+                    />
+                    VVIP - (Rp 3.000.000)
+                  </label>
+                </td>
+              </tr>
 
-                        <!-- Tiket VVIP -->
-                        <label for="vvip">
-                          <input
-                            type="radio"
-                            name="ticket-type"
-                            id="vvip"
-                            value="vvip"
-                            required
-                          />
-                          VVIP - (Rp 3.000.000)
-                        </label>
-                      </td>
-                    </tr>
+              <!-- Ticket Quantity -->
+              <tr align="left">
+                <td>
+                  <label for="ticket-qty"><strong>Jumlah Tiket</strong></label>
+                </td>
+                <td align="center">:</td>
+                <td>
+                  <input
+                    type="number"
+                    name="ticket-qty"
+                    id="ticket-qty"
+                    placeholder=" 1 - 10"
+                    min="1"
+                    max="10"
+                    required
+                  />
+                  Pax
+                </td>
+              </tr>
 
-                    <!-- Ticket Quantity -->
-                    <tr>
-                      <td>
-                        <label for="ticket-qty"
-                          ><strong>Jumlah Tiket</strong></label
-                        >
-                      </td>
-                      <td align="center">:</td>
-                      <td>
-                        <input
-                          type="number"
-                          name="ticket-qty"
-                          id="ticket-qty"
-                          placeholder=" 1 - 10"
-                          min="1"
-                          max="10"
-                          required
-                        />
-                        Pax
-                      </td>
-                    </tr>
+              <!-- Day Pass -->
+              <tr align="left">
+                <!-- Day 1 -->
+                <td>
+                  <label for="day-pass"><strong>Day Pass</strong></label>
+                </td>
+                <td align="center">:</td>
+                <td>
+                  <label for="day-1">
+                    <input
+                      type="checkbox"
+                      name="day-pass"
+                      id="day-1"
+                      value="day-1"
+                    />
+                    Day 1
+                  </label>
+                  <br /><br />
 
-                    <!-- Day Pass -->
-                    <tr>
-                      <!-- Day 1 -->
-                      <td>
-                        <label for="day-pass"><strong>Day Pass</strong></label>
-                      </td>
-                      <td align="center">:</td>
-                      <td>
-                        <label for="day-1">
-                          <input
-                            type="checkbox"
-                            name="day-pass"
-                            id="day-1"
-                            value="day-1"
-                          />
-                          Day 1
-                        </label>
-                        <br /><br />
+                  <!-- Day 2 -->
+                  <label for="day-2">
+                    <input
+                      type="checkbox"
+                      name="day-pass"
+                      id="day-2"
+                      value="day-2"
+                    />
+                    Day 2
+                  </label>
+                  <br /><br />
 
-                        <!-- Day 2 -->
-                        <label for="day-2">
-                          <input
-                            type="checkbox"
-                            name="day-pass"
-                            id="day-2"
-                            value="day-2"
-                          />
-                          Day 2
-                        </label>
-                        <br /><br />
+                  <!-- Day 3 -->
+                  <label for="day-3">
+                    <input
+                      type="checkbox"
+                      name="day-pass"
+                      id="day-3"
+                      value="day-3"
+                    />
+                    Day 3
+                  </label>
+                </td>
+              </tr>
 
-                        <!-- Day 3 -->
-                        <label for="day-3">
-                          <input
-                            type="checkbox"
-                            name="day-pass"
-                            id="day-3"
-                            value="day-3"
-                          />
-                          Day 3
-                        </label>
-                      </td>
-                    </tr>
-
-                    <!-- Submit Form -->
-                    <tr>
-                      <td colspan="3" align="center">
-                        <button type="submit">Continue to payment</button>
-                      </td>
-                    </tr>
-                  </table>
+              <!-- Submit Form -->
+              <tr>
+                <td colspan="3" align="center">
+                  <button type="submit">Continue to payment</button>
                 </td>
               </tr>
             </table>
